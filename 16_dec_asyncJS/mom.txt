@@ -54,3 +54,42 @@ console.log(a);
 //addeventlistener('click',()=>{
 
 // })
+
+// States of promises :
+//value is fulfillled => resolve;
+// value is not fulfilled => reject ;
+// searching value => pending ;
+
+
+function add (a,b){
+    return new Promise((resolve,reject)=>{
+       let c=a+b;
+       if(c>5){
+        resolve(c)
+       }else{
+        reject("error:")
+       }
+    })
+}
+// .then and .catch
+//. then (()=>{it hanldes resolved data})
+//.catch(()=>{it handles rejected data})
+add(4,2).then((data)=>console.log(data,"resolved data")).catch((err)=>console.log(err,"reject data"))
+
+// async -await;
+(
+    async()=>{
+        try {
+            let data  =await add(2,4)
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+                   
+}
+
+)()
+
+
+
+console.log("end")
