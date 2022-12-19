@@ -196,3 +196,10 @@ async function reader1(){
 Promise.all([reader(),reader1()]).then((data)=>console.log(data))
 
 
+async function resolve_data(){
+   try {
+    let data=  await brcypt.hash(asasa,asas);
+   } catch (error) {
+    console.log(error);
+   }
+}
