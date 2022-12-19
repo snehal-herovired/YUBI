@@ -1,35 +1,38 @@
-html,body{
+html,
+body {
     /* background-color: red; */
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     /* this is given in order to avoid padding altering the dimension of our divs */
 }
 
-.header{
+.header {
     height: 10%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #0F1111;
     display: flex;
     padding: 5px;
-    
+
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
-.subheader{
+
+.subheader {
     height: 8%;
     width: 100%;
     background-color: lightgrey;
 }
-.container{
-   height: 82%;
-   width: 100%;
-   background-color: lightgreen;
+
+.container {
+    height: 82%;
+    width: 100%;
+    background-color: lightgreen;
 }
 
-.section1{
+.section1 {
     display: flex;
     /* background-color: yellow; */
     width: 15%;
@@ -38,54 +41,121 @@ html,body{
     justify-content: space-around;
 }
 
-.logo{
-   height: 100%;
-   width: 30%;
-  
-   
+.logo {
+    height: 100%;
+    width: 30%;
+
+
 }
-.logo >img{
+
+.logo>img {
     height: 100%;
     width: 100%;
 }
-.deliver{
+
+.deliver {
     height: 100%;
     width: 40%;
-   /* background-color: lightcoral; */
-   display:flex;
- 
+    /* background-color: lightcoral; */
+    display: flex;
+
 }
-.deliver>.icon{
+
+.deliver>.icon {
     height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center
-
-    /* background-color: red; */
+        /* background-color: red; */
 }
-.deliver>.icon>i{
+
+.deliver>.icon>i {
     height: 6px;
+    color:white;
 }
 
-.deliver-content{
-   height: 100%;
-   font-size: small;
-   width: 70%;
-   display: flex;
-   font-family: Arial, Helvetica, sans-serif;
-   flex-direction: column;
-justify-content: center;
+.deliver-content {
+    height: 100%;
+    font-size: small;
+    width: 70%;
+    display: flex;
+    color:white;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content: center;
 }
-.searchbox{
+.section2{
+    /* background-color: red; */
+    height: 65%;
+    width: 60%;
+    margin-left: 15px;
+}
+.section2>.searchbox>input{
+  height: 95%;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.searchbox {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 2px; */
+}
+.section3{
+    /* background-color: red; */
+    width: 22%;
+    height: 65%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.signin {
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.signin>button{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3cf72;
 
 }
-.signin{
+.orders {
+     /* background-color: red; */
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 25%;
+     color:white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     font-weight: bold;
+     
+ }
 
+
+.cart {
+      /* background-color: red; */
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      
 }
-.orders{
-
-}
-.cart{
-
+.cart>i{
+    color: white;
 }
