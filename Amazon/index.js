@@ -1,3 +1,11 @@
+//cursor :pointer
+// added event listener in array;
+// added event listener to particular elements
+//adding class dynamically;
+// about flex-wrap and how to handle overflow;
+//fetch
+// handling promisified function (fetch ) with async await;
+
 let deliver_div =document.querySelector(".deliver");
 let order_div =document.querySelector(".orders");
 let subheader =document.querySelector('.subheader');
