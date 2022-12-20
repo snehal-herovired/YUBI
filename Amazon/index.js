@@ -49,4 +49,17 @@ for(let i=0;i<child_of_subheader.length;i++){
 // in order to get data from external sources or server;
 // fetch is a inbuilt  Ajax method used to handle request to a server;
 // fetch is a promisified function;
+// by default fetch does a get type of request;
+// let fetch_someData = fetch("https://dummyjson.com/products");
+// console.log(fetch_someData);
 
+async function fetching_data(){
+    try {
+        let res =await fetch("https://dummyjson.com/products")
+    let data =await res.json();
+    console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+fetching_data()
